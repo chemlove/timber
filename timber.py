@@ -18,6 +18,7 @@ from rdkit.Chem import ChemicalForceFields
 from rdkit.Chem import BRICS
 from rdkit.Chem import rdMolAlign
 from rdkit.Chem import rdmolops
+import distutils.spawn
 
 ###############################################################################
 
@@ -338,6 +339,10 @@ if __name__=='__main__':
             ff=args['ff']
         else:
             print('Error: setup mode required force field specification.\n')
+            sys.exit()
+
+        if not distutils.spawn.find_executable('antechamber'):
+            print('Error: cannot find antechamer.\n')
             sys.exit()
 
     ## Proceed with setup ##
