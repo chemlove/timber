@@ -309,7 +309,7 @@ def write_ti_strings(off_list,output_file):
 
 if __name__=='__main__':
     ## Command line arguments ##
-    parser = argparse.ArgumentParser(description='TIMER code for AMBER TI setup\n')
+    parser = argparse.ArgumentParser(description='TIMBER code for AMBER TI setup\n')
     parser.add_argument('-i',help='CSV file with ligand mappings',required=True)
     parser.add_argument('-sdf',help='SDF file with ligands',required=False)
     parser.add_argument('-ff',help='Force field',choices=['gaff','gaff2'],required=False)

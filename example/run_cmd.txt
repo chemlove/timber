@@ -1,0 +1,4 @@
+Setup two transformations:
+
+../timber.py -i mapping.csv -sdf three_ligs.sdf -m setup -ff gaff2
+
