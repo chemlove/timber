@@ -1,10 +1,11 @@
+
 TIMER: a package to simplify setup of TI free energy calculations with AMBER.
 
 Usage:
 
 ./timber.py -i mapping.csv -sdf ligand_file.sdf -m setup -ff gaff
 
-    - mapping.csv: CSV file, with header, containing rows of transformations
+    - mapping.csv: CSV file, with header, containing rows of transformations:
 		   Name1,Name2
 		   benzene,phenol
 
@@ -15,6 +16,7 @@ Usage:
     - gaff: AMBER small molecule force field definition. gaff or gaff2.
 
 Output:
+
     - for each transformation in the CSV file, there will be a directory Name1_Name2.
       Inside, there will be directories "start" (ligand1) and "endpoint" (ligand2),
       each of these will contain small molecule parameters such that the TI region 
